@@ -18,5 +18,9 @@ public class ShopController {
     public ResponseEntity<Shop> saveShop(@RequestBody Shop shop){
         return new ResponseEntity<Shop>(shopService.save(shop),HttpStatus.CREATED);
     }
-
+    @GetMapping("/shop")
+    public List<Shop> getShop(@RequestParam(name ="area",required = false) String areaName){
+        if (areaName!=null) return shopService.getShopByAreaName(areaName);
+        else return shopService.getAll();
+    }
 }
