@@ -1,0 +1,2 @@
+curl -X POST "http://localhost:8081/api/shop" -H "accept: */*" -H "Content-Type: application/json" -d "{ \"area\": { \"id\": 5 }, \"name\": \"Econet First Street\"}"
+curl -X GET "http://localhost:8081/api/shop?area=HARARE%20CBD" -H "accept: */*"
