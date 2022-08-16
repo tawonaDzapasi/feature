@@ -1,0 +1,25 @@
+version: '3.4'
+
+services:
+  db:
+    image: mysql
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: 69162015_Td
+      MYSQL_DATABASE: lms
+    ports:
+      - "3306:3306"
+    expose:
+      - '3306'
+    volumes:
+      - ~/apps/mysql:/var/lib/mysql
+  lms:
+    image: lms
+    network_mode: "host"
+    restart: on-failure
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    ports:
+      - 8081:8081
+  
