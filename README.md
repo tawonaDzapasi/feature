@@ -10,3 +10,5 @@ run docker-compose up on terminal to download required images both openjdk & mys
 enter the url http://localhost:8081/swagger-ui.html on browser and use the try-it-out option to test end-points
 
 --
+https://drive.google.com/drive/folders/1_4kJkAnZbcwWABP5u2ZFRCG9NNASycod?usp=sharing
+https://drive.google.com/file/d/13BoTJuDan_zrp4XJwMoXyYXrHyavUamR/view?usp=sharing
