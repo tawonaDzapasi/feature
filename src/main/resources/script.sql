@@ -1,0 +1,1 @@
+insert into area(name) values('HARARE CBD');
